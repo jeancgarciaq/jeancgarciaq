@@ -1,0 +1,41 @@
+name: Update GitHub Profile README
+
+on:
+  # Dispara el workflow cada día a una hora específica
+  schedule:
+    - cron: "0 0 * * *" # Se ejecuta a medianoche UTC cada día
+  # También permite ejecutar el workflow manualmente
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18' # Puedes elegir la versión de Node.js que necesites
+
+      - name: Install dependencies (if any for the script)
+        # Solo si tu script local necesita dependencias de Node.js
+        # run: npm install
+
+      - name: Generate recent commits section
+        uses: 'marketplace-actions/recent-activity@v2' # Acción de GitHub de la comunidad
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token automático de GitHub Actions
+        with:
+          MAX_LINES: 5 # Muestra los 5 commits más recientes
+          # Puedes configurar más opciones aquí, como tipos de eventos, ignorar ramas, etc.
+          # Ver documentación de la acción para más detalles.
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "Update profile README with latest activity" || echo "No changes to commit"
+          git push
