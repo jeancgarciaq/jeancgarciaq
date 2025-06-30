@@ -1,6 +1,8 @@
-# ¡Hola, soy [Tu Nombre]! 👋
+# ¡Hola, soy Jean Carlo Garcia! 👋
 
-Soy un desarrollador apasionado por ... [agrega tu biografía].
+**Desarrollador Full-Stack (PHP/Laravel) y Analista de Datos con Python | Apasionado por transformar datos en soluciones innovadoras.**
+
+Con más de 30 años de experiencia en gestión de datos y procesos administrativos, y una sólida trayectoria en **desarrollo PHP (Laravel)** y **análisis de datos con Python (Pandas, Matplotlib)**. Mi enfoque se centra en crear sistemas robustos y eficientes, como mi **Sistema Administrativo de Condominio**, y en extraer insights valiosos de los datos para la toma de decisiones. Constantemente aprendiendo y aplicando nuevas tecnologías. ¡Explora mis proyectos para ver mi trabajo!
 
 ## Mis Últimos Commits
 
