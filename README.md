@@ -8,8 +8,7 @@ Soy un desarrollador apasionado por ... [agrega tu biografía].
 
 ## Proyectos Destacados
 
-* [Mi Proyecto Increíble 1](https://github.com/jeancgarciaq/)
-* [Mi Proyecto Increíble 2](https://github.com/jeancgarciaq/)
+* [Visita mi Espacio Personal en Github](https://github.com/jeancgarciaq/jeancgarciaq.github.io)
 
 ---
 
