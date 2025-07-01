@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: '18' # Puedes elegir la versión de Node.js que necesites
 
-      - name: Install dependencies (if any for the script)
+      #- name: Install dependencies (if any for the script)
         # Solo si tu script local necesita dependencias de Node.js
         # run: npm install
 
