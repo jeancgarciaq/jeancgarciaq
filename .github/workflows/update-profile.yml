@@ -1,7 +1,7 @@
-name: Update GitHub Profile README
+name: Update Github Profile README
 
 on:
-  # Dispara el workflow cada día a una hora específica
+  # Dispara el workflow cada dia a una hora especifica
   schedule:
     - cron: "0 0 * * *" # Se ejecuta a medianoche UTC cada día
   # También permite ejecutar el workflow manualmente
